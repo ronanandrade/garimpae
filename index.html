@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garimpaê (@garimpae_desconto) | Achadinhos e promoções do dia</title>
+<meta name="description" content="A gente garimpa, você economiza! Achadinhos e ofertas selecionadas da Amazon, Mercado Livre e TikTok Shop.">
+<meta name="theme-color" content="#012f3d">
+<meta property="og:title" content="Garimpaê | Achadinhos e promoções do dia">
+<meta property="og:description" content="A gente garimpa, você economiza! Ofertas selecionadas da Amazon, Mercado Livre e TikTok Shop.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/logo-192.png">
+<link rel="preload" as="image" href="img/logo-192.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#ofertas">Ir para as ofertas</a>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <img class="logo" src="img/logo-192.webp" srcset="img/logo-192.webp 1x, img/logo-384.webp 2x" width="112" height="112" alt="Logo Garimpaê: sacola de compras com lupa e etiqueta">
+    <h1><span class="sr">Garimpaê </span>@garimpae_desconto</h1>
+    <p class="bio" id="bio">A gente garimpa, você economiza! Achadinhos e promoções do dia.</p>
+    <nav class="social" id="social" aria-label="Redes e lojas"></nav>
+  </div>
+</header>
+
+<main>
+  <div class="bar" role="search">
+    <div class="wrap">
+      <label class="sr" for="q">Buscar produto</label>
+      <div class="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4-4"/></svg>
+        <input id="q" type="search" placeholder="Buscar produto (ex.: air fryer)" autocomplete="off" enterkeyhint="search">
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por categoria"></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="top" class="sec" aria-labelledby="h-top" hidden>
+      <h2 id="h-top"><span aria-hidden="true">🔥</span> Mais vendidos</h2>
+      <ol class="rail" id="rail-top"></ol>
+    </section>
+
+    <section id="news" class="sec" aria-labelledby="h-news" hidden>
+      <h2 id="h-news"><span aria-hidden="true">✨</span> Novidades no TikTok Shop</h2>
+      <ul class="rail" id="rail-news"></ul>
+    </section>
+
+    <section id="ofertas" class="sec" aria-labelledby="h-all">
+      <div class="sec-head">
+        <h2 id="h-all">Todas as ofertas</h2>
+        <p id="count" class="count" role="status" aria-live="polite"></p>
+      </div>
+      <ul class="grid" id="grid"></ul>
+      <div id="empty" class="empty" hidden>
+        <p><strong>Nada por aqui ainda.</strong></p>
+        <p>Tente outra palavra ou limpe o filtro.</p>
+        <button class="btn ghost" id="reset" type="button">Limpar filtros</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="img/logo-96.webp" width="56" height="56" alt="" loading="lazy">
+    <p class="disc"><strong>Links de afiliado:</strong> posso receber comissão sem custo extra para você.</p>
+    <p class="small">Preços e disponibilidade podem mudar a qualquer momento. Confira o valor final na página da loja antes de comprar.</p>
+    <p class="small">© Garimpaê · @garimpae_desconto</p>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Vitrine Garimpaê (@garimpae_desconto) - site estático
+- Abra index.html (ou sirva a pasta: python3 -m http.server).
+- Para atualizar produtos edite products.js (nome, preco, loja, categoria, url, imagem, ranking 1-6 = "Mais vendidos", novidade true = "Novidades").
+- Imagens dos produtos em img/p/ (webp). Preços vieram dos títulos do Linktree; confira antes de publicar.
