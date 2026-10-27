@@ -110,3 +110,5 @@ h2{margin:0 0 14px;font-size:1.35rem;letter-spacing:-.01em}
 }
 @media (min-width:1200px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.btn.tg{background:#229ED9;color:#fff;margin:16px auto 0;max-width:360px;font-weight:700}
